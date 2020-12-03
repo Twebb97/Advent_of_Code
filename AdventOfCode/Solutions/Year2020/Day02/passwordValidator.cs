@@ -18,7 +18,8 @@ namespace AdventOfCode.Solutions.Year2020
 
                 var count =  password.Count(toCheck => toCheck == letterToCheck);
                 return count >= digitBoundaries[0] && count <= digitBoundaries[1];
-
+        }
+        
         public bool isValidPart2(String input) {
             var pair = input.Split(":").Select(s=> s.Trim()).ToArray();
             var policy = pair[0];
